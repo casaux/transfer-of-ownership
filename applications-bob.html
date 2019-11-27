@@ -12,95 +12,95 @@
       <script type="text/javascript" src="../mycasa-src/js/jquery.js"></script>
       <script type="text/javascript">
          /* page specific js */
-         
+
          $(document).ready(function() {
-         
-         
-         
-         
+
+
+
+
          var state;
          var dob;
          var dobObject;
-         
+
          var acq;
          var acqObject;
-         
+
          function leadingZero(number){
-         
+
          if(number.length==1){
          return "0"+number;
          } else {
          return number;
          }
-         
-         
+
+
          }
-         
+
          function getDOB(){
-         
+
          if($("#text-input-block1").val().length==1){
          $("#text-input-block1").val("0"+$("#text-input-block1").val());
          }
-         
+
          if($("#text-input-block2").val().length==1){
          $("#text-input-block2").val("0"+$("#text-input-block2").val());
          }
-         
-         
+
+
          var DD = 	$("#text-input-block1").val();
          var MM = 	$("#text-input-block2").val();
          var YYYY = 	$("#text-input-block3").val();
-         
+
          dob = DD+"/"+MM+"/"+YYYY;
-         	
+
          dobObject = new Date(YYYY+"-"+MM+"-"+DD);
-             
+
          }
-         
+
          function getACQ(){
-         
+
          if($("#text-input-block4").val().length==1){
          $("#text-input-block4").val("0"+$("#text-input-block4").val());
          }
-         
+
          if($("#text-input-block5").val().length==1){
          $("#text-input-block5").val("0"+$("#text-input-block5").val());
          }
-         
-         
+
+
          var DD = 	$("#text-input-block4").val();
          var MM = 	$("#text-input-block5").val();
          var YYYY = 	$("#text-input-block6").val();
-         
+
          acq = DD+"/"+MM+"/"+YYYY;
-         	
+
          acqObject = new Date(YYYY+"-"+MM+"-"+DD);
-             
+
          }
-         
-         
-         
-         
-         
-         
+
+
+
+
+
+
          $('#validate a').bind("click", function() {
-         
-         
+
+
          getDOB();
-         getACQ();	 
-         
-         
+         getACQ();
+
+
              var given_names = $("#given-name-input").val();
              var family_name = $("#family-name-input").val();
              var stock_number = $("#stocknumber").val();
-         
+
          stock_number = stock_number.replace(/[^a-zA-Z0-9]+/g, '');
-         
+
              output = "GivenName|" + given_names + ";FamilyName|" + family_name + ";StockNumber|" + stock_number + ";DateOfBirth|" + dob+";AcquisitionDate|" + acq;
              console.log(output);
-         
+
              return false;
-         
+
          });
          });
       </script>
@@ -200,22 +200,22 @@
                                        09/04/2019
                                     </div>
                                     <div class="col-xs-4">
-										<a href="confirm-details.html">Transfer Aircraft Ownership</a>
+										<a href="confirm-details.html">Transfer Aircraft Ownership (VH-ABC)</a>
                                     </div>
                                     <div class="col-xs-4">
                                        <span class="badge badge-success">In progress</span>	Awaiting your confirmation
                                     </div>
                                  </div>
-								  
-								  
-						  
-								  
-								  
-								  
-								  
-								  
-								  
-								  
+
+
+
+
+
+
+
+
+
+
                               </div>
                            </div>
                         </div>
@@ -238,14 +238,14 @@
                                     <div class="col-xs-4">
                                     </div>
                                  </div>
-								  
-								  
- 								
-								  
-								  
-								  
-								  
-								  
+
+
+
+
+
+
+
+
                                  <div class="row body-row">
                                     <div class="col-xs-4">
                                        01/03/2019
