@@ -7,72 +7,72 @@
       <meta name="viewport" content="initial-scale=1">
       <link rel="stylesheet" href="../mycasa-src/css/furnace.min.css">
       <link rel="stylesheet" href="../mycasa-src/css/casa.css">
-	   
-	   
-	   
+
+
+
       <script type="text/javascript" src="../mycasa-src/js/furnace.min.js"></script>
       <script type="text/javascript" src="../mycasa-src/js/jquery.min.js"></script>
       <script type="text/javascript" src="../mycasa-src/js/jquery.js"></script>
       <script type="text/javascript">
          /* page specific js */
-         
+
 		  $( document ).ready(function() {
 
 			  			  $(".operator-type").on('input', function() {
-				  
+
 				  if($("input:radio[name='radio-ex']:checked").val()=="no"){
-					  
+
 					  $("#no").css("display","block");
-					  
-					  
+
+
 				  } else {
-					  
+
 					  $("#no").css("display","none");
-					  
+
 				  }
-				  
+
 			  });
-			  
+
 			  $(".detail-info").on('input', function() {
-				  
+
 				  if($("input:radio[name='radio-ex1']:checked").val()=="yes"){
-					  
+
 					  $("#test").css("display","block");
-					  
+
 				  } else {
-					  
+
 					  $("#test").css("display","none");
-					  
+
 				  }
-				  
+
 			  });
-			  
+
 			  $(".owner-type").on('input', function() {
-				  
+
 				  if($("input:radio[name='radio-ex3']:checked").val()=="individual"){
-					  
+
 					  $("#individual").css("display","block");
-					  
+
 				  } else {
-					  
+
 					  $("#individual").css("display","none");
-					  
+
 				  }
 				  if($("input:radio[name='radio-ex3']:checked").val()=="organisation"){
-					  
+
 					  $("#organisation").css("display","block");
-					  
+
 				  } else {
-					  
+
 					  $("#organisation").css("display","none");
-					  
+
 				  }
-				  
+
 			  });
-			  
-			  
+
+
 			  $("#no-serial").change(function() {
-				  
+
 				if ( $(this).is(':checked') ) {
 					$("#text-input-block3").prop('disabled', true);
 					$("#no-serial-callout").css("display","block");
@@ -80,18 +80,18 @@
 					$("#text-input-block3").prop('disabled', false);
 					$("#no-serial-callout").css("display","none");
 				}
-				 
+
 			   });
-			  
+
 			   $("#category").on('input', function() {
-			   
+
 			   		if($(this).val()==6){
 			   			 $("#other-manufacturer").css("display","block");
 			   		} else {
 			   			 $("#other-manufacturer").css("display","none");
 			   		}
-			   
-			   
+
+
 			   		if($(this).val()==5){
 			   			 $("#home-build").css("display","block");
 			   			 $(".default-values").css("display","none");
@@ -102,26 +102,26 @@
 
 
 			   });
-			  
+
 			  $("#navigate a"). click(function(){
 				var radioValue = $("input[name='radio-ex1']:checked"). val();
 				window.location.href=radioValue+".html";
 			 });
-			  
 
-			  
 
-			  
-			  
 
-			  
 
-			  
+
+
+
+
+
+
 		  });
 
-		  
-		  
-         
+
+
+
       </script>
    </head>
    <body class="live-demo au-body au-grid">
@@ -134,7 +134,7 @@
                      <a href="index.html"><img src="../mycasa-src/img/CASALOGO-white-i.svg"></a>
                   </div>
                   <div class="casa-menu">
-                  
+
                   	<div id="dropdown-menu">
 						<div id="dd-menu"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/menu.png" height="20" />Menu</a></div>
 						<div id="dd-close"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/close.png" height="20" />Close</a><br />
@@ -143,8 +143,8 @@
 						<p><a href="#">Switch profile</a></p>
 						<p><a href="mycasa-signed-out.html">Sign out</a></p>
 						</div>
-                  
-                  
+
+
                   </div>
                </div></div>
             </div>
@@ -162,7 +162,7 @@
          <div class="container">
 			 <div class="row">
 			 			  <div class="col-xs-12">
-			
+
                <nav class="au-breadcrumbs" aria-label="breadcrumb">
                   <ul class="au-link-list au-link-list--inline">
                      <li><a href="dashboard-bob.html">myCASA</a></li>
@@ -174,13 +174,15 @@
                   <h1 class="break desktop au-header-heading">Transfer aircraft ownership</h1>
                   <a class="au-direction-link au-direction-link--left" href="confirm-details.html">Back</a>
                </header>
-			 
-<h2>Return to aircraft owner</h2>
-<p>You have indicated that the details of the aircraft transfer are incorrect. If this is not the case, you can <a href="confirm-details.html">go back</a> to review and submit the transfer notice by confirming the transfer details, otherwise you can continue and the transfer notice will be returned to the current aircraft owner.</p>							  
-		
+
+               <h2>Cancel application</h2>
+<p>You have indicated that the details of the aircraft transfer are incorrect. By accepting the declaration below and submitting this form you will cancel this application.</p>
+
+
+
 <h3>Declaration</h3>
 <br>
-					  
+
 		<div class="dec">
 
 		<p class="au-callout" aria-label="Callout description1">
@@ -202,21 +204,21 @@ I acknowledge that, if I have made a false or misleading statement in this form,
 
 
 			 <br><br><br>
-				   
+
 				<div class="form-navigation">
 
-							
-			<a class="au-btn au-btn--primary" href="bounce-back-submit.html">Submit</a>          
-            
-							
-				
+
+			<a class="au-btn au-btn--primary" href="bounce-back-submit.html">Submit</a>
+
+
+
 
 				</div>
 				               <hr />
             <a href="arn-saved.html" class="au-btn au-btn--secondary">
             Save and exit application
-            </a>  
-				   
+            </a>
+
             </div>
 
 			 </div>
@@ -225,7 +227,7 @@ I acknowledge that, if I have made a false or misleading statement in this form,
 
 
           <div class="footer">
-           
+
             <div class="footer-wrapper">
                <iframe src="../mycasa-src/footer.html" frameborder="0" border="0" scrolling="no"></iframe>
             </div>
