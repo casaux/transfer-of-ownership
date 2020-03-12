@@ -7,72 +7,72 @@
       <meta name="viewport" content="initial-scale=1">
       <link rel="stylesheet" href="../mycasa-src/css/furnace.min.css">
       <link rel="stylesheet" href="../mycasa-src/css/casa.css">
-	   
-	   
-	   
+
+
+
       <script type="text/javascript" src="../mycasa-src/js/furnace.min.js"></script>
       <script type="text/javascript" src="../mycasa-src/js/jquery.min.js"></script>
       <script type="text/javascript" src="../mycasa-src/js/jquery.js"></script>
       <script type="text/javascript">
          /* page specific js */
-         
+
 		  $( document ).ready(function() {
 
 			  			  $(".operator-type").on('input', function() {
-				  
+
 				  if($("input:radio[name='radio-ex']:checked").val()=="no"){
-					  
+
 					  $("#no").css("display","block");
-					  
-					  
+
+
 				  } else {
-					  
+
 					  $("#no").css("display","none");
-					  
+
 				  }
-				  
+
 			  });
-			  
+
 			  $(".detail-info").on('input', function() {
-				  
+
 				  if($("input:radio[name='radio-ex1']:checked").val()=="yes"){
-					  
+
 					  $("#test").css("display","block");
-					  
+
 				  } else {
-					  
+
 					  $("#test").css("display","none");
-					  
+
 				  }
-				  
+
 			  });
-			  
+
 			  $(".owner-type").on('input', function() {
-				  
+
 				  if($("input:radio[name='radio-ex3']:checked").val()=="individual"){
-					  
+
 					  $("#individual").css("display","block");
-					  
+
 				  } else {
-					  
+
 					  $("#individual").css("display","none");
-					  
+
 				  }
 				  if($("input:radio[name='radio-ex3']:checked").val()=="organisation"){
-					  
+
 					  $("#organisation").css("display","block");
-					  
+
 				  } else {
-					  
+
 					  $("#organisation").css("display","none");
-					  
+
 				  }
-				  
+
 			  });
-			  
-			  
+
+
 			  $("#no-serial").change(function() {
-				  
+
 				if ( $(this).is(':checked') ) {
 					$("#text-input-block3").prop('disabled', true);
 					$("#no-serial-callout").css("display","block");
@@ -80,18 +80,18 @@
 					$("#text-input-block3").prop('disabled', false);
 					$("#no-serial-callout").css("display","none");
 				}
-				 
+
 			   });
-			  
+
 			   $("#category").on('input', function() {
-			   
+
 			   		if($(this).val()==6){
 			   			 $("#other-manufacturer").css("display","block");
 			   		} else {
 			   			 $("#other-manufacturer").css("display","none");
 			   		}
-			   
-			   
+
+
 			   		if($(this).val()==5){
 			   			 $("#home-build").css("display","block");
 			   			 $(".default-values").css("display","none");
@@ -102,26 +102,26 @@
 
 
 			   });
-			  
+
 			  $("#navigate a"). click(function(){
 				var radioValue = $("input[name='radio-ex1']:checked"). val();
 				window.location.href=radioValue+".html";
 			 });
-			  
 
-			  
 
-			  
-			  
 
-			  
 
-			  
+
+
+
+
+
+
 		  });
 
-		  
-		  
-         
+
+
+
       </script>
    </head>
    <body class="live-demo au-body au-grid">
@@ -134,7 +134,7 @@
                      <a href="index.html"><img src="../mycasa-src/img/CASALOGO-white-i.svg"></a>
                   </div>
                   <div class="casa-menu">
-                  
+
                   	<div id="dropdown-menu">
 						<div id="dd-menu"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/menu.png" height="20" />Menu</a></div>
 						<div id="dd-close"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/close.png" height="20" />Close</a><br />
@@ -143,8 +143,8 @@
 						<p><a href="#">Switch profile</a></p>
 						<p><a href="mycasa-signed-out.html">Sign out</a></p>
 						</div>
-                  
-                  
+
+
                   </div>
                </div></div>
             </div>
@@ -162,7 +162,7 @@
          <div class="container">
 			 <div class="row">
 			 			  <div class="col-xs-12">
-			
+
                <nav class="au-breadcrumbs" aria-label="breadcrumb">
                   <ul class="au-link-list au-link-list--inline">
                      <li><a href="dashboard-paul.html">myCASA</a></li>
@@ -174,12 +174,12 @@
                   <h1 class="break desktop au-header-heading">Confirm registered operator details</h1>
                   <a class="au-direction-link au-direction-link--left" href="confirm-ro-details.html">Back</a>
                </header>
-			 
 
-		
+
+
 <h2>Declaration</h2>
 <br>
-					  
+
 		<div class="dec">
 
 		<p class="au-callout" aria-label="Callout description1">
@@ -190,7 +190,7 @@ I hereby declare that the particulars set out in this registered operator appoin
 
 I am aware and accept the risk that information sent electronically may be intercepted and read during transmission, not delivered or modified.
 
-I have read CASA’s policy on the collection and release of information and I authorise CASA to release information contained in this form in accordance with that policy.  
+I have read CASA’s policy on the collection and release of information and I authorise CASA to release information contained in this form in accordance with that policy.
 
 I acknowledge that, if I have made a false or misleading statement in this form, I may be liable to prosecution for an offence under the Criminal Code Act 1995 (Cth).</span>
 			</label>
@@ -199,21 +199,21 @@ I acknowledge that, if I have made a false or misleading statement in this form,
 										</div>
 									   </div>
 <br><br><br>
-				   
+
 				<div class="form-navigation">
 
-							
-			<a class="au-btn au-btn--primary" href="paul-successful.html">Submit</a>          
-            
-							
-				
+
+			<a class="au-btn au-btn--primary" href="paul-successful.html">Submit</a>
+
+
+
 
 				</div>
 				               <hr />
             <a href="arn-saved.html" class="au-btn au-btn--secondary">
             Save and exit application
-            </a>  
-				   
+            </a>
+
             </div>
 
 			 </div>
@@ -222,7 +222,7 @@ I acknowledge that, if I have made a false or misleading statement in this form,
 
 
           <div class="footer">
-           
+
             <div class="footer-wrapper">
                <iframe src="../mycasa-src/footer.html" frameborder="0" border="0" scrolling="no"></iframe>
             </div>
